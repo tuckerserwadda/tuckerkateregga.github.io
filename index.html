@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tucker da Data Scientist – Portfolio</title>
+  <meta name="description" content="Machine Learning & Data Science portfolio of Tucker S. Kateregga"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#121936; --muted:#c6c9d6; --acc:#6ee7ff; --acc2:#a78bfa; --text:#f5f7ff;
+      --card:#0f1530; --ring: rgba(174,197,255,.25)
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:radial-gradient(1200px 600px at 80% -10%, rgba(82,97,255,.20), transparent),
+      radial-gradient(800px 400px at -10% 10%, rgba(29,211,254,.15), transparent), var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--acc)} a:hover{opacity:.9}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;gap:18px;align-items:center;justify-content:space-between;padding:14px 0 6px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--acc2),var(--acc));box-shadow:0 10px 24px -8px var(--ring)}
+    h1{font-size:1.3rem;margin:0}
+    nav a{margin:0 10px;text-decoration:none;font-weight:600}
+    .hero{margin:28px 0;padding:28px;border:1px solid rgba(255,255,255,.06);background:linear-gradient(180deg,rgba(255,255,255,.03),transparent);border-radius:18px;box-shadow:0 10px 40px -20px var(--ring)}
+    .hero h2{font-size:2rem;margin:0 0 10px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);font-size:.8rem;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:16px;box-shadow:0 8px 30px -18px var(--ring)}
+    .card h3{margin:0 0 6px;font-size:1.05rem}
+    .card p{margin:6px 0 12px;color:var(--muted);font-size:.95rem;min-height:54px}
+    .badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+    .badge{padding:4px 8px;border-radius:999px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);font-size:.75rem;color:var(--muted)}
+    .cta{display:inline-flex;gap:10px;align-items:center;padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(180deg,rgba(122,120,255,.18),rgba(122,120,255,.08));text-decoration:none;font-weight:700}
+    section{margin:34px 0}
+    footer{margin:34px 0;color:var(--muted);font-size:.9rem}
+    .row{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+    @media (max-width:880px){.row{grid-template-columns:1fr}}
+    .panel{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:18px}
+    code{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Tucker da Data Scientist</h1>
+          <div class="pill">Machine Learning • Data Science • Analytics</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Turning data into decisions.</h2>
+      <p style="max-width:720px;color:var(--muted)">I build practical ML systems—from data cleaning and feature engineering to model training and explainability. Explore hands‑on projects in healthcare, customer churn, and real‑time vision.</p>
+      <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="cta" href="#projects">View Projects</a>
+        <a class="cta" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+        <a class="cta" href="mailto:serwadda.tucker14@gmail.com">Email</a>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 style="margin-bottom:12px">Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>InsightBot: NL‑Driven EDA & ML</h3>
+          <p>Upload CSVs, ask questions in natural language, get plots and train models with SHAP explanations.</p>
+          <div class="badges"><span class="badge">Python</span><span class="badge">FastAPI</span><span class="badge">SHAP</span><span class="badge">React</span></div>
+          <p><a href="#">Repo</a> · <a href="#">Demo</a></p>
+        </article>
+        <article class="card">
+          <h3>Telco Churn Modeling</h3>
+          <p>Phi‑K correlation, outlier handling, and tree‑based models with calibrated probabilities.</p>
+          <div class="badges"><span class="badge">Pandas</span><span class="badge">scikit‑learn</span><span class="badge">Phi‑K</span></div>
+          <p><a href="#">Repo</a></p>
+        </article>
+        <article class="card">
+          <h3>Real‑time Age & Emotion</h3>
+          <p>Webcam inference using ONNX models; efficient preprocessing and debounced predictions.</p>
+          <div class="badges"><span class="badge">OpenCV</span><span class="badge">ONNX</span><span class="badge">Python</span></div>
+          <p><a href="#">Repo</a></p>
+        </article>
+        <article class="card">
+          <h3>Healthcare EHR Cleaning</h3>
+          <p>Robust imputation, IQR/z‑score outlier treatment, and reproducible EDA dashboards.</p>
+          <div class="badges"><span class="badge">Pandas</span><span class="badge">EDA</span><span class="badge">Dash</span></div>
+          <p><a href="#">Repo</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="row">
+      <div class="panel">
+        <h2>About</h2>
+        <p style="color:var(--muted)">I’m Tucker S. Kateregga, a MSCS student focused on Data Science & ML. I enjoy building end‑to‑end pipelines: data ingestion → modeling → interpretability → deployment. I share learnings through posts and portfolio projects.</p>
+        <ul>
+          <li>Focus: clinical data science, ML ops basics, practical analytics</li>
+          <li>Stack: Python, scikit‑learn, Pandas, Matplotlib/Seaborn, FastAPI, React</li>
+          <li>Interests: options‑style decision making, data storytelling, fairness</li>
+        </ul>
+      </div>
+      <aside class="panel">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Résumé (PDF)</a></li>
+        </ul>
+        <h3>Tech I Use</h3>
+        <div class="badges">
+          <span class="badge">Python</span><span class="badge">Pandas</span><span class="badge">scikit‑learn</span>
+          <span class="badge">Jupyter</span><span class="badge">FastAPI</span><span class="badge">React</span>
+        </div>
+      </aside>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p style="color:var(--muted)">Open to internships, junior roles, and collabs. Reach out at <a href="mailto:serwadda.tucker14@gmail.com">serwadda.tucker14@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Tucker S. Kateregga · Hosted on GitHub Pages
+    </footer>
+  </div>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
